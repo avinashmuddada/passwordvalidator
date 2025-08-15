@@ -51,7 +51,7 @@ function passwordvalidator(password){
         }
     }
     for(let i=0;i<password.length;i++) {
-        if(password.charCodeAt(i)>=48 || password.charCodeAt(i)>=57) {
+        if(password.charCodeAt(i)>=48 && password.charCodeAt(i)<=57) {
             num.innerHTML="Your password must have atleast one digit"
             num.style.color='green'
             break
