@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Password validation</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <center>
+            <h1>Type your password which should have 1 Uppercase letter,1 Lowercase letter,1 Special symbol(@ or _) 
+                and 1 Number and password must contain 8 characters</h1>
+            <input type="password" id="password" 
+            oninput="passwordvalidator(event.target.value)"
+            placeholder="Enter your password">
+
+            <p id="length"></p>
+            <p id="uppercase"></p>
+            <p id="lowercase"></p>
+            <p id="special"></p>
+            <p id="number"></p>
+        </center>
+
+        <script src="script.js"></script>
+    </body>
+</html>
